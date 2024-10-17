@@ -1,0 +1,25 @@
+# Cost-Effective Portfolio Website on GCP with Terraform
+
+This Terraform configuration deploys a cost-effective and secure portfolio website on Google Cloud Platform (GCP). It utilizes App Engine, Cloud Storage, IAM, and VPC networking to achieve a highly available and scalable solution.
+
+## Architecture
+
+* **Compute:** Google App Engine (GAE) Standard Environment for serverless application hosting.
+* **Storage:** Google Cloud Storage (GCS) for storing website files (HTML, CSS, JavaScript, images).
+* **Networking:**  GAE's built-in load balancing and global CDN for high availability and low latency.
+* **Security:** IAM for access control and a VPC with firewall rules for network isolation.
+
+## Cost Optimization
+
+* **App Engine:**  Free tier for low-traffic websites.
+* **Cloud Storage:** Free tier for storage, retrieval, and egress.
+
+## Deployment Instructions
+
+1. **Set up a GCP Project:** Create a new project in the Google Cloud Console.
+2. **Install Terraform:** Download and install Terraform.
+3. **Authenticate:** Configure GCP credentials for Terraform.
+4. **Create `main.tf`:**  Save the Terraform code below as `main.tf`.
+5. **Initialize Terraform:** Run `terraform init`.
+6. **Deploy:** Execute `terraform apply`.
+7. **Upload Website Files:** Upload your website files to the GCS bucket.
